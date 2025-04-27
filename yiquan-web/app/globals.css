@@ -1,0 +1,54 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --primary: 45, 55, 72;
+  --background: 246, 248, 250;
+  --accent: 107, 114, 128;
+  --muted: 156, 163, 175;
+  --light-accent: 243, 244, 246;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-feature-settings: "ss01" on, "ss02" on, "cv01" on, "cv02" on;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  .bg-primary {
+    background-color: rgb(var(--primary));
+  }
+  .bg-background {
+    background-color: rgb(var(--background));
+  }
+  .bg-accent {
+    background-color: rgb(var(--accent));
+  }
+  .bg-muted {
+    background-color: rgb(var(--muted));
+  }
+  .bg-light-accent {
+    background-color: rgb(var(--light-accent));
+  }
+  .text-primary {
+    color: rgb(var(--primary));
+  }
+  .text-accent {
+    color: rgb(var(--accent));
+  }
+  .text-muted {
+    color: rgb(var(--muted));
+  }
+}
+
